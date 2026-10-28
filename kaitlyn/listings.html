@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Properties for Sale and Rent | Kaitlyn Benedetto</title>
+<meta name="description" content="Search homes, apartments, condos and land for sale and rent in the Mohawk Valley, NY with Kaitlyn Benedetto.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="hdr"></div>
+<section class="banner" style="--bg:url(images/banners/listings.jpg)">
+  <div class="wrap"><p class="crumbs"><a href="index.html">Home</a> / Properties</p><h1>Homes, apartments and land</h1><p>Filter by what matters to you. Every property has full details and a tour request.</p></div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <form class="panel" id="sf" style="margin-top:-60px;position:relative;z-index:5"><h2>Refine your search</h2></form>
+    <div class="resbar" id="top-results" style="margin-top:50px">
+      <b id="count" aria-live="polite"></b>
+      <div style="display:flex;gap:12px;align-items:center"><button class="btn sm dk" id="clear" type="button">Clear filters</button>
+        <select id="sort" aria-label="Sort properties"><option value="">Featured first</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="beds">Most bedrooms</option></select></div>
+    </div>
+    <div class="grid3" id="results"></div>
+  </div>
+</section>
+
+<div id="ftr"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/listings.js"></script>
+</body>
+</html>
